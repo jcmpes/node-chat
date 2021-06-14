@@ -1,0 +1,12 @@
+version: '3'
+services:
+    chat:
+        image: node-chat
+        container_name: node-chat
+        ports:
+        - 4000:3000
+        restart: always
+    mongo:
+        image: mongo
+        container_name: node-chat-mongo
+        restart: always
